@@ -1,0 +1,30 @@
+.header {
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.header__logo {
+    height: 1.5rem;
+}
+
+.header__hamburger {
+    color: var(--dark-blue);
+}
+
+
+@media screen and (min-width: 900px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 1.5em 0 0 0;
+    }
+
+    .header__logo {
+        height: 1rem;
+    }
+}

@@ -1,0 +1,50 @@
+.header__navigation {
+    display: flex;
+    width: 85vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    position: absolute;
+    background: var(--white);
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 8rem;
+    border-radius: 0.25rem;
+    z-index: 2;
+}
+
+.navigation__item {
+    color: var(--dark-blue);
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navigation__item:visited {
+    color: var(--dark-blue);
+}
+
+@media screen and (min-width: 900px) {
+    .header__navigation {
+        position: static; /* remove translations */
+        transform: none;
+        flex-direction: row;
+        width: auto;
+        padding: 0;
+    }
+
+    .navigation__item {
+        font-size: 1rem;
+        border-bottom: 5px solid var(--white);
+        padding-bottom: 1.5rem;
+    }
+
+    .navigation__item:hover {
+        /* need to come up with a way to make the underline appear, then i am done with heading */
+        border-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))
+    }
+}
+
+
