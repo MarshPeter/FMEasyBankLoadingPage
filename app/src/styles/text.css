@@ -1,0 +1,11 @@
+.description__text {
+    line-height: 1.4rem;
+    text-align: center;
+    color: var(--grayish-blue);
+}
+
+@media only screen and (min-width: 900px) {
+    .description__text {
+        text-align: left;
+    }
+}

@@ -1,0 +1,17 @@
+.latest-article-title {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media only screen and (min-width: 900px) {
+    .articles-container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}

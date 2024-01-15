@@ -1,0 +1,29 @@
+.article-container {
+    box-shadow: 0 0 1em 0.5em var(--light-grayish-blue);
+}
+
+.article__image {
+    width: 100%;
+}
+
+.article__description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+.article__author {
+    font-size: 0.7rem;
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
+
+.article__title {
+    font-size: 1.1rem;
+}
+
+.article__description {
+    text-align: left;
+}

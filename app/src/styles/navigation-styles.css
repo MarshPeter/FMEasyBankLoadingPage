@@ -15,15 +15,19 @@
     z-index: 2;
 }
 
+.header__navigation--desktop {
+    display: none;
+}
+
 .navigation__item {
-    color: var(--dark-blue);
+    color: var(--grayish-blue);
     font-size: 2rem;
     text-decoration: none;
     cursor: pointer;
 }
 
 .navigation__item:visited {
-    color: var(--dark-blue);
+    color: var(--grayish-blue);
 }
 
 @media screen and (min-width: 900px) {
@@ -35,16 +39,24 @@
         padding: 0;
     }
 
+    .header__navigation--desktop {
+        display: flex;
+    }
+
     .navigation__item {
         font-size: 1rem;
-        border-bottom: 5px solid var(--white);
-        padding-bottom: 1.5rem;
+        height: 2.5rem;
+        transform: translateY(calc(50% - 5px - 0.21rem));
     }
 
     .navigation__item:hover {
-        /* need to come up with a way to make the underline appear, then i am done with heading */
-        border-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))
+        color: var(--dark-blue);
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-image-source: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+        border-image-slice: 1;
     }
+
 }
 
 

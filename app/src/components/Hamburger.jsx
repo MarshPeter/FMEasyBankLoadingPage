@@ -22,9 +22,6 @@ export default function Hamburger({navItems}) {
     }
     return (
         <>
-            <a className="header__hamburger" onClick={handleHamburgerClick} href="">
-                <FontAwesomeIcon className="fa-sm" icon={!showNavigationOnMobile? faBars : faX} />
-            </a>
             <nav className={classesForHamburgerNavBar}>
                 {navItems.map((item) => {
                     return (
@@ -32,6 +29,9 @@ export default function Hamburger({navItems}) {
                     )
                 })}
             </nav>
+            <a className="header__hamburger" onClick={handleHamburgerClick} href="">
+                <FontAwesomeIcon className="fa-sm" icon={!showNavigationOnMobile? faBars : faX} />
+            </a>
             <div className={dimmerClass}></div>
         </>
     )
